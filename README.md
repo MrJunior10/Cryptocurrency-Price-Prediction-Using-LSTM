@@ -3,17 +3,12 @@
 
 Predicting cryptocurrency closing prices using **Long Short-Term Memory (LSTM)** networks, tailored for handling sequential and volatile financial market data.
 
-![Project Screenshot Placeholder](https://via.placeholder.com/800x400?text=Add+Your+Project+Image+Here)
-
 ## 📜 Table of Contents
 1. [About the Project](#about-the-project)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Data Pipeline](#data-pipeline)
 5. [Results and Observations](#results-and-observations)
-6. [Getting Started](#getting-started)
-7. [Folder Structure](#folder-structure)
-8. [License](#license)
 
 ---
 
@@ -35,8 +30,8 @@ Cryptocurrency prices are highly volatile, making accurate predictions challengi
   - Comparison of models with different LSTM configurations.
   - Evaluation of optimizer impact on training and prediction accuracy.
 - **Performance Comparison**:
-  - Metrics like **Mean Absolute Error (MAE)** and **Root Mean Square Error (RMSE)**.
-  - Predicted vs. actual performance insights.
+  - Metrics like **Mean Absolute Error (MAE)** and **Test_loss and Train_loss**.
+  - Predicted performance insights.
 - **Train-Test Split Analysis**:
   - Analysis of how varying data splits affect model performance.
 - **Predicted Next Close Price**:
@@ -57,7 +52,7 @@ Cryptocurrency prices are highly volatile, making accurate predictions challengi
 ## 🔗 Data Pipeline
 
 1. **Data Acquisition**:
-   - Historical cryptocurrency data sourced from [Kaggle](https://www.kaggle.com/).
+   - Historical cryptocurrency data sourced from Kaggle.
 
 2. **Preprocessing**:
    - Dropping irrelevant columns (e.g., `Unnamed: 0`).
@@ -69,8 +64,8 @@ Cryptocurrency prices are highly volatile, making accurate predictions challengi
    - Exploring different optimizers (`Adam`, `RMSprop`, `SGD`).
 
 4. **Evaluation**:
-   - Metrics: MAE, RMSE.
-   - Predicted vs. actual prices comparison.
+   - Metrics: MAE.
+   - Predicted prices comparison.
    - Analysis of train-test splits and configurations.
 
 ---
@@ -91,56 +86,10 @@ Cryptocurrency prices are highly volatile, making accurate predictions challengi
 
 ---
 
-## 🚀 Getting Started
-
-### **Prerequisites**
-- Install required libraries:
-  ```bash
-  pip install tensorflow pandas matplotlib seaborn scikit-learn
-  ```
-
-### **Clone the Repository**
-```bash
-git clone https://github.com/yourusername/crypto-price-prediction-lstm.git
-cd crypto-price-prediction-lstm
-```
-
-### **Run the Code**
-1. Place your dataset in the `data/` folder.
-2. Run the main notebook:
-   ```bash
-   jupyter notebook main.ipynb
-   ```
-3. Review visualizations and metrics generated in the notebook.
-
----
-
-## 📁 Folder Structure
-
-```
-crypto-price-prediction-lstm/
-├── data/                     # Dataset folder
-├── models/                   # Saved model files
-├── notebooks/                # Jupyter notebooks
-│   └── main.ipynb            # Main implementation notebook
-├── results/                  # Generated plots and performance metrics
-├── README.md                 # Project documentation
-└── requirements.txt          # Required libraries
-```
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
 ## 🎉 Acknowledgments
 
-- [Kaggle Datasets](https://www.kaggle.com/) for cryptocurrency data.
+- **Kaggle** for cryptocurrency data.
 - TensorFlow/Keras for simplifying deep learning implementations.
 
 ---
 
-This README is designed to make your GitHub repository appealing and informative for viewers while providing all necessary details to understand, replicate, and build upon your work.
